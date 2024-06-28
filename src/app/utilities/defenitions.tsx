@@ -1,4 +1,4 @@
-export interface IPrimaryBtn {
+export interface IButtons {
   disabled?: boolean;
   type?: "unset" | "invert" | "transparent" | "frameless";
   fullWidth?: boolean;

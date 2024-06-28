@@ -1,7 +1,7 @@
 import { IButtons } from "@/app/utilities/defenitions";
 import React from "react";
 
-const PrimaryBtn = ({
+const SecondaryBtn = ({
   type = "unset",
   disabled = false,
   fullWidth = false,
@@ -17,14 +17,14 @@ const PrimaryBtn = ({
     } else {
       if (type === "unset") {
         status =
-          "text-white-500 bg-primary-500 border-primary-500 border-solid border";
+          "text-white-500 bg-black-200 border-black-200 border-solid border";
       } else if (type === "invert") {
         status =
-          "text-primary-800 bg-primary-100 border-primary-100 border-solid border";
+          "text-black-500 bg-black-50 border-black-50 border-solid border";
       } else if (type === "frameless") {
-        status = "text-primary-500 border-primary-500 border-solid border";
+        status = "text-black-500 border-black-500 border-solid border";
       } else {
-        status = "text-primary-500 border-transparent border-solid border";
+        status = "text-black-500 border-transparent border-solid border";
       }
     }
 
@@ -53,4 +53,4 @@ const PrimaryBtn = ({
   );
 };
 
-export default PrimaryBtn;
+export default SecondaryBtn;

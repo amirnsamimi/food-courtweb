@@ -5,4 +5,5 @@ export interface IPrimaryBtn {
   loading?: boolean;
   icon?: boolean;
   state?: (e: string) => void;
+  size?: "large" | "medium" | "small";
 }
